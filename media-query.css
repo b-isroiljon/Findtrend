@@ -1,0 +1,195 @@
+@media only screen and (max-width: 848px) {
+    .container{
+        padding: 0;
+    }
+    .menu {
+        display: none;
+        margin: 1rem;
+    }
+
+    .name-content,
+    .job-content {
+        font-size: 3.4rem;
+    }
+
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .name-content,
+    .job-content {
+        font-size: 2.9rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+
+    .name-content,
+    .job-content {
+        font-size: 2rem;
+    }
+    .text-content {
+       font-size: 0.9rem; 
+    }
+    .login,
+    .register-button{
+        display: none;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .rotate-twitter{
+        transform: rotate(2deg) translate(0px,  60px);
+    }
+    .rotate-pient{
+        transform: rotate(0) translate(0px, 60px);
+    }
+    .rotate-facebook{
+        transform: rotate(-2deg) translate(0px, 60px);
+    }
+    .rotate-ball{
+        transform: rotate(0) translate(0px,  60px);
+    }
+    .ro-text,
+    .Arrow  {
+        display: none;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .green-container{
+        margin: 0;
+        padding:  3rem;
+    }
+    .gr-text {
+        font-size:  2rem;
+    }
+    .white-con {
+        margin: 0;
+        width: 23rem;
+        height: 7rem;
+    }
+    .tab-text1{
+        font-size: 13px;
+        transform: rotate(4deg) translate(-125px, -10px);
+    }
+    .arrow-img1{
+        font-size: 13px;
+        transform: rotate(152deg) translate(71px, 59px);
+    }
+    .tab-text{
+        font-size: 13px;
+        transform: rotate(4deg) translate(112px, 10px);
+    }
+    .arrow-img{
+        font-size: 13px;
+        transform: rotate(339deg) translate(90px, 46px);
+    }
+    .white-bottom-text {
+        color: #000;
+        text-align: center;
+        font-size: 0.8em;
+        line-height: 150%;
+    }
+
+    .long-text {
+        padding: 0;
+    }
+    .ordinary-text,
+    .grey-text {
+        font-size: 3rem;
+    }
+    .brand-text{
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding-top: 5rem;
+    }
+    .brand-items{
+        display: grid;
+        grid-template-columns: 169px 158px;
+        grid-template-rows: 100px;
+        grid-auto-flow: row;
+        justify-items: stretch;
+    
+
+    }
+    .brands{
+        width: 11rem;
+        height: 5rem;
+    }
+    .brand-img{
+        width: 6rem;
+        height: 1rem;
+    }
+    .platform-text{
+        text-align: center;
+        font-size: 1.4rem;
+        white-space: nowrap
+    }
+    .square-socials {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 169px 158px;
+        grid-template-rows: 100px;
+        grid-auto-flow: row;
+        align-items: center;
+        justify-items: start;
+
+    }
+    .tweet1{
+        width: 21.1875rem;
+        height: 7.25rem;
+        flex-shrink: 0;
+    }
+    .tweet2{
+        width: 21.1875rem;
+        height: 21.5rem;
+        flex-shrink: 0;
+    }
+    .tweet3{
+        width: 21.1875rem;
+        height: 7.25rem;
+        flex-shrink: 0;
+    }
+    .dev-text{
+        font-size: 2.6rem;
+        white-space: nowrap;
+    }
+    .black-con{
+        padding: 00px;
+    }
+    .packet{
+        display: flex;
+        flex-direction: column;
+    }
+    .switch-con{
+        display: flex;
+        flex-direction: row;
+    }
+    .join,
+    .topics{
+        font-size: 2rem;
+    }
+    .green-btn{
+        width: 124px;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 6.25rem;
+        width: 100%;
+        background: #FFF;
+    }
+    .footer-items{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    }
+}
