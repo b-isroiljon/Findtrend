@@ -9,47 +9,34 @@
 
 .container {
     display: flex;
-    width: 100%;
-    margin: 0;
+    min-width: 100%;
+    minheight: 100vh;
+    padding: 2em;
     background: url(/images/Bg-hero.png);
-    padding: 2rem;
     background-position: center;
     flex-direction: column;
 }
 
-header nav {
-    position: fixed;
+.navbar {
+    display: flex;
     top: 0px;
     left: 0px;
-    background-color: white;
     width: 100%;
-    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
     z-index: 10;
-}
-
-nav .navbar {
-    width: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: auto;
-    padding-top: 25px;
+    flex-wrap: nowrap;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
-nav .navbar .logo {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
-}
-
-.navbar .menu {
-    display: flex;
-}
-
-.navbar .menu li {
+.menu {
     list-style: none;
-    margin: 0 39px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
 }
 
 .logo-text {
@@ -57,31 +44,29 @@ nav .navbar .logo {
     align-items: center;
     color: #FFF;
     text-align: center;
-    /* font-family: 'Inter'; */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 24px */
-    margin-left: 14px;
+    padding-left: 14px;
 }
 
 .menu li a {
+    margin: 0.5em;
     color: #FFF;
     text-align: center;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1.4rem;
     text-decoration: none;
     font-weight: 400;
-    line-height: 100%;
-    /* 18px */
+
 }
 
 .menu li a:hover {
     color: #A8FF35;
 }
 
-.login {
+.login,
+.login-box {
     color: #FFF;
     text-align: center;
     font-size: 18px;
@@ -93,38 +78,27 @@ nav .navbar .logo {
 }
 
 .register-button {
-    display: inline-flex;
     color: #000;
-    text-align: center;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    /* 18px */
     border-radius: 40px;
     background: #FFF;
     padding: 12px 32px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 19px;
-    gap: 10px;
 }
 
 .name-content {
     color: #FFF;
     text-align: center;
-    font-size: 74px;
+    font-size: 4.5rem;
     font-style: normal;
     font-weight: 900;
     line-height: 112%;
-    margin-top: 6.19rem;
-    /* 80.64px */
+    margin-top: 1.9rem;
 }
 
 .job-content {
     color: #FFF;
     text-align: center;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-style: normal;
     font-weight: 900;
     line-height: 112%;
@@ -140,6 +114,7 @@ nav .navbar .logo {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    flex-shrink: 0;
     /* 27px */
 }
 
@@ -149,134 +124,168 @@ nav .navbar .logo {
     justify-content: center;
 }
 
-.button-big {
+.big-button {
     display: flex;
-    padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.button-big {
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
     color: #000;
-    text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     border-radius: 40px;
     background: #A8FF35;
-    line-height: 140%;
-    /* 25.2px */
-    gap: 10px;
-    margin-top: 60px;
 }
 
 .ro-text {
+    display: inline-block;
     color: #FFF;
-    display: inline-flex;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
     font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 50px;
-    margin-left: 40px;
-    transform: rotate(11deg) translate(0px, 20px);
+    transform: translate(165px, -103px); rotate: 6deg;
+    
 }
 
-.big-button .Arrow {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-top: 100px;
-    transform: translate(-99px, -25px) rotate(335deg);
+.Arrow {
+    transform: translate(150px, -86px);
 }
 
-.cards {
+.cards { 
     color: white;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top: 6.19rem;
+    align-items: center;
+
 }
 
 .card {
     display: flex;
-    width: 340px;
-    height: 82px;
-    flex-shrink: 0;
+    width: 21.2rem;
+    flex-shrink: 0; 
     background-color: #181818;
     justify-content: space-around;
     align-items: center;
+    /* margin: 10px; */
 }
 
 .social-card {
     width: 30px;
     height: 30px;
-    flex-shrink: 0;
+    flex-shrink: 1;
     margin: 10px;
 }
 
 .gr-x {
     display: flex;
-    width: 82px;
     height: 80px;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    /* transform: rotate(2deg); */
     flex-shrink: 0;
     text-decoration: none;
     color: #FFFfff;
-    background: linear-gradient(270deg, #181818 53.65%, rgba(17, 17, 17, 0.8) 100%);
+
 }
 
 i {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    width: 15.871px;
-    height: 15.871px;
+    width: 15px;
     transform: rotate(2deg);
-    flex-shrink: 0;
 }
 
-.rotate-4 {
-    transform: rotate(-10deg) translate(11px, -52px);
+ .rotate-twitter {
+    transform: rotate(358deg) translate(157px, -52px);
     z-index: 3;
-    box-shadow: -1px 1px 20px 5px #181818;
-    margin-bottom: 100px;
+    box-shadow: 10px 5px 5px black;
 }
 
-.rotate__4 {
-    transform: rotate(2deg);
-    box-shadow: -1px 1px 20px 5px #181818;
+.rotate-pient {
+    transform: rotate(2deg) translate(10px, 10px);
+    box-shadow: 10px 5px 5px black;
     z-index: 2;
 }
 
-.rotate-2 {
+.rotate-facebook{
     transform: rotate(-2deg);
     z-index: 1;
-    box-shadow: -1px 1px 20px 5px #181818;
-    transform: translate(10px, -52px);
+    box-shadow: 10px 5px 5px black;
+    transform: translate(-60px, -52px);
 }
 
-.rotate-50 {
-    transform: rotate(359deg);
+.rotate-ball {
+    transform: rotate(356deg) translate(-143px, 10px);
     z-index: 0;
-    box-shadow: -1px 1px 20px 5px #181818;
+    box-shadow: 10px 5px 5px black;
 }
 
 .social-text {
     color: #FFFfff;
     text-align: center;
-    /* font-family:'Roboto'; */
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+} 
+
+@media only screen and (max-width: 848px) {
+    .container{
+        padding: 0;
+    }
+    .menu {
+        display: none;
+        margin: 1rem;
+    }
+
+    .name-content,
+    .job-content {
+        font-size: 3.4rem;
+    }
+
+
+    .navbar {
+        justify-content: space-between;
+    }
 }
 
-@media  only screen and (max-width: 378px){
-    ul {
+@media only screen and (max-width: 650px) {
+
+    .name-content,
+    .job-content {
+        font-size: 2.9rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+
+    .name-content,
+    .job-content {
+        font-size: 2rem;
+    }
+    .text-content {
+       font-size: 0.9rem; 
+    }
+    .login,
+    .register-button{
         display: none;
-        min-height: auto;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .rotate-twitter{
+        transform: rotate(2deg) translate(0px,  60px);
+    }
+    .rotate-pient{
+        transform: rotate(0) translate(0px, 60px);
+    }
+    .rotate-facebook{
+        transform: rotate(-2deg) translate(0px, 60px);
+    }
+    .rotate-ball{
+        transform: rotate(0) translate(0px,  60px);
+    }
+    .ro-text,
+    .Arrow  {
+        display: none;
     }
 }
