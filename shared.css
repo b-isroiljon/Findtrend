@@ -10,9 +10,9 @@
 .container {
     display: flex;
     min-width: 100%;
-    minheight: 100vh;
+    min-height: 100vh;
     padding: 2em;
-    background: url(/images/Bg-hero.png);
+    background: url(./images/Bg-hero.png);
     background-position: center;
     flex-direction: column;
 }
