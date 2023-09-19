@@ -15,10 +15,12 @@
     background: url(./images/Bg-hero.png);
     background-position: center;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .navbar {
     display: flex;
+    background-color: #000;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -26,7 +28,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: nowrap;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .menu {
@@ -60,29 +62,32 @@
     font-weight: 400;
 
 }
+x
+.content-text {
+    margin-top: 4rem;
+}
 
 .menu li a:hover {
     color: #A8FF35;
 }
 
-.login,
-.login-box {
+.login {
     color: #FFF;
     text-align: center;
     font-size: 18px;
     font-style: normal;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 100%;
-    /* 18px */
+    margin-right: 2.5rem;
 }
 
 .register-button {
     color: #000;
-    font-size: 18px;
-    border-radius: 40px;
+    font-size: 17px;
+    border-radius: 2.5rem;
     background: #FFF;
-    padding: 12px 32px;
+    padding: 8px 25px;
 }
 
 .name-content {
@@ -142,27 +147,28 @@
 .ro-text {
     display: inline-block;
     color: #FFF;
-    font-style: italic;
-    transform: translate(165px, -103px); rotate: 6deg;
-    
+    font-family: cursive;
+    transform: translate(165px, -103px);
+    rotate: 6deg;
+
 }
 
 .Arrow {
     transform: translate(150px, -86px);
 }
 
-.cards { 
+.cards {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 6rem;
 }
 
 .card {
     display: flex;
     width: 21.2rem;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     background-color: #181818;
     justify-content: space-around;
     align-items: center;
@@ -187,15 +193,18 @@
     color: #FFFfff;
 
 }
-
+.bx {
+    line-height: 0 !important;
+    color: #000;
+}
 i {
     display: flex;
     align-items: center;
-    width: 15px;
-    transform: rotate(2deg);
+    color:#FFFFFF;
+    font-size: 24px;
 }
 
- .rotate-twitter {
+.rotate-twitter {
     transform: rotate(358deg) translate(157px, -52px);
     z-index: 3;
     box-shadow: 10px 5px 5px black;
@@ -207,7 +216,7 @@ i {
     z-index: 2;
 }
 
-.rotate-facebook{
+.rotate-facebook {
     transform: rotate(-2deg);
     z-index: 1;
     box-shadow: 10px 5px 5px black;
@@ -225,4 +234,4 @@ i {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-} 
+}

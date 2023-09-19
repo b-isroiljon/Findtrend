@@ -25,11 +25,17 @@
         font-size: 2.9rem;
     }
 }
-@media only screen and (max-width: 560px) {
 
+@media only screen and (max-width: 560px) {
+    .container{
+        justify-content: unset;
+    }
     .name-content,
     .job-content {
         font-size: 2rem;
+    }
+    .content-text{
+        margin-top: 2rem;
     }
     .text-content {
        font-size: 0.9rem; 
@@ -59,8 +65,6 @@
     .Arrow  {
         display: none;
     }
-}
-@media only screen and (max-width: 560px) {
     .green-container{
         margin: 0;
         padding:  3rem;
@@ -97,11 +101,13 @@
     }
 
     .long-text {
-        padding: 0;
+        padding: 1.3rem;
     }
-    .ordinary-text,
+    .ordinary-text{
+       font-size: 2.3rem; 
+    }
     .grey-text {
-        font-size: 3rem;
+        font-size: 2.1rem;
     }
     .brand-text{
         font-size: 2rem;
@@ -113,7 +119,7 @@
         grid-template-columns: 169px 158px;
         grid-template-rows: 100px;
         grid-auto-flow: row;
-        justify-items: stretch;
+        justify-items: center;
     
 
     }
@@ -125,25 +131,34 @@
         width: 6rem;
         height: 1rem;
     }
+
+    .grey-con{
+        padding: 5rem 0;
+    }
+
     .platform-text{
         text-align: center;
-        font-size: 1.4rem;
-        white-space: nowrap
+        font-size: 2.4rem;
     }
     .square-socials {
-        display: grid;
+        overflow: auto;
+        width: 340px;
         gap: 30px;
-        grid-template-columns: 169px 158px;
-        grid-template-rows: 100px;
-        grid-auto-flow: row;
         align-items: center;
         justify-items: start;
+        /* display: grid; */
+        /* grid-template-columns: 169px 158px;
+        grid-template-rows: 100px;
+        grid-auto-flow: row; */
 
     }
     .tweet1{
         width: 21.1875rem;
         height: 7.25rem;
         flex-shrink: 0;
+    }
+    .tweet-screen{
+        margin: 40px 0;
     }
     .tweet2{
         width: 21.1875rem;
@@ -160,7 +175,10 @@
         white-space: nowrap;
     }
     .black-con{
-        padding: 00px;
+        padding: 3rem 1rem;
+    }
+    .arrow {
+        display: none;
     }
     .packet{
         display: flex;
@@ -185,11 +203,18 @@
         width: 100%;
         background: #FFF;
     }
+    .black-logo {
+        margin: 6rem 8rem 0rem 5.5rem;
+    }
+
+    .tecst{
+        margin: 1.5rem 0;
+    }
     .footer-items{
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    margin: 5rem 0;
     }
 }
